@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.3;
+  background: #0f1424;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #bdc1ff;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  background: #1c1f4a;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1.5rem 0 1rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+h4 {
+  color: #bdc1ff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+p {
+  color: #bdc1ff;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1080px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  height: 500px;
+}
+
+.dashboard-grid-item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  height: 100%;
+}
+
+.dashboard-grid-item2 {
+  height: 100%;
+}
+
+.card {
+  border-style: none;
+  position: relative;
+  height: 100%;
+}
+
+.card-header {
+  border-radius: 15px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header-img {
+  width: 30%;
+  position: absolute;
+  right: 15px;
+  top: -10px;
+}
+
+.card-header-person {
+  background: #5847eb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.card-header-person img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 80px;
+  margin-bottom: 3rem;
+}
+
+.card-header-work {
+  background: #ff8c66;
+}
+
+.card-header-play {
+  background: #56c2e6;
+}
+
+.card-header-study {
+  background: #ff5c7c;
+}
+
+.card-header-excercise {
+  background: #4acf81;
+}
+
+.card-header-social {
+  background: #7536d3;
+}
+
+.card-header-selfcare {
+  background: #f1c65b;
+}
+
+.card-body {
+  background: #1c1f4a;
+  padding: 1.5rem;
+  border-radius: 15px;
+  height: 80%;
+}
+
+.card-body img {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.card-body-work {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-body-work:hover {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background: #292f70;
+}
+
+.card-body-timeframe {
+  height: 100%;
+}
+
+.card-body-timeframe-space {
+  height: 70%;
+}
+
+.card-body-timeframe-list {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card-body-timeframe li {
+  padding: 0.5rem;
+}
+
+.card-body-timeframe li :hover {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
+
+.attribution {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  color: #bdc1ff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #657fe6;
+}
+/*# sourceMappingURL=main.css.map */
