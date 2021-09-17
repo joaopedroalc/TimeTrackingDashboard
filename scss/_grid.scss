@@ -1,0 +1,36 @@
+.grid {
+  &-container {
+    flex: 1;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      ' person work play study'
+      ' person exercise social self-care';
+    grid-template-columns: repeat(4, minmax(240px, 290px));
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+  }
+  &-item {
+    &-person {
+      grid-area: person;
+    }
+    &-work {
+      grid-area: work;
+    }
+    &-play {
+      grid-area: play;
+    }
+    &-study {
+      grid-area: study;
+    }
+    &-exercise {
+      grid-area: exercise;
+    }
+    &-social {
+      grid-area: social;
+    }
+    &-self-care {
+      grid-area: self-care;
+    }
+  }
+}

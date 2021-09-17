@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,55 +13,67 @@ body {
   background: $bg-primary;
 }
 
+.card-svg {
+  position: absolute;
+  top: 18%;
+  right: 15%;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    .card-svg-color {
+      fill: #fff;
+    }
+  }
+}
+
 img {
-  display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  color: $text-faded;
-  font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
-  background: $bg-card;
-  border: none;
-}
-
 ul {
   list-style: none;
 }
 
+.btn {
+  background: inherit;
+  color: $text-time-select;
+  border: none;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+
+  &-active {
+    color: #fff;
+  }
+
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}
+
 h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 300%;
   font-weight: 300;
-  margin: 1.5rem 0 1rem;
 }
 
 h2 {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
 h3 {
   color: #fff;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-h4 {
-  color: $text-faded;
-  font-size: 1rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 
 p {
   color: $text-faded;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }

@@ -10,101 +10,144 @@
   <body>
     <main>
       <div class="container">
-        <div class="dashboard-grid">
-          <div class="dashboard-grid-item1">
-            <div class="card">
-              <div class="card-header card-header-person">
-                <img src="/images/image-jeremy.png" alt="Person - Jeremy Robson" />
-                <p class="faded">Report for</p>
-                <h2>Jeremy Robson</h2>
+        <div class="grid-container">
+          <div class="grid-container-item grid-item-person">
+            <div class="card card-person">
+              <div class="card-person-header">
+                <img class="card-person-img" src="/images/image-jeremy.png" alt="Jeremy Robson" />
+                <div>
+                  <p>Report for</p>
+                  <h1>Jeremy Robson</h1>
+                </div>
               </div>
-              <div class="card-body card-body-timeframe">
-                <div class="card-body-timeframe-space"></div>
-                <div class="card-body-timeframe-list">
-                  <ul>
-                    <li><button>Daily</button></li>
-                    <li><button>Weekly</button></li>
-                    <li><button>Monthly</button></li>
+              <div class="card-person-body">
+                <div class="card-person-body-timeframe">
+                  <ul class="card-person-body-timeframelist">
+                    <li><button class="btn btn-daily btn-active">Daily</button></li>
+                    <li><button class="btn btn-weekly">Weekly</button></li>
+                    <li><button class="btn btn-monthly">Monthly</button></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
+          <div class="grid-container-item grid-item-work">
+            <div class="card card-work">
               <div class="card-header card-header-work">
                 <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
               </div>
               <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
+                <h2>Work</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="work-hours-current">0hrs</h3>
+                <p class="work-hours-previous">Yesterday - 0hrs</p>
               </div>
             </div>
           </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
-              <div class="card-header card-header-excercise">
-                <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
+          <div class="grid-container-item grid-item-play">
+            <div class="card card-play">
+              <div class="card-header card-header-play">
+                <img class="card-header-img" src="/images/icon-play.svg" alt="play" />
               </div>
-              <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
-              </div>
-            </div>
-          </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
-              <div class="card-header card-header-work">
-                <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
-              </div>
-              <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
+              <div class="card-body card-body-play">
+                <h2>Play</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="play-hours-current">0hrs</h3>
+                <p class="play-hours-previous">Yesterday - 0hrs</p>
               </div>
             </div>
           </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
-              <div class="card-header card-header-work">
-                <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
+          <div class="grid-container-item grid-item-study">
+            <div class="card card-study">
+              <div class="card-header card-header-study">
+                <img class="card-header-img" src="/images/icon-study.svg" alt="study" />
               </div>
-              <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
-              </div>
-            </div>
-          </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
-              <div class="card-header card-header-work">
-                <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
-              </div>
-              <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
+              <div class="card-body card-body-study">
+                <h2>Study</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="study-hours-current">0hrs</h3>
+                <p class="study-hours-previous">Yesterday - 0hrs</p>
               </div>
             </div>
           </div>
-          <div class="dashboard-grid-item2">
-            <div class="card">
-              <div class="card-header card-header-work">
-                <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
+          <div class="grid-container-item grid-item-exercise">
+            <div class="card card-exercise">
+              <div class="card-header card-header-exercise">
+                <img class="card-header-img" src="/images/icon-exercise.svg" alt="exercise" />
               </div>
-              <div class="card-body card-body-work">
-                <h3>Work</h3>
-                <img src="/images/icon-ellipsis.svg" alt="Work" />
-                <h1>32hrs</h1>
-                <p class="faded">Last Week - 36hrs</p>
+              <div class="card-body card-body-exercise">
+                <h2>Exercise</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="exercise-hours-current">0hrs</h3>
+                <p class="exercise-hours-previous">Yesterday - 0hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-container-item grid-item-social">
+            <div class="card card-social">
+              <div class="card-header card-header-social">
+                <img class="card-header-img" src="/images/icon-social.svg" alt="social" />
+              </div>
+              <div class="card-body card-body-social">
+                <h2>Social</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="social-hours-current">0hrs</h3>
+                <p class="social-hours-previous">Yesterday - 0hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-container-item grid-item-self-care">
+            <div class="card card-self-care">
+              <div class="card-header card-header-self-care">
+                <img class="card-header-img" src="/images/icon-self-care.svg" alt="selfcare" />
+              </div>
+              <div class="card-body card-body-self-care">
+                <h2>Self Care</h2>
+                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="card-svg-color"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <h3 class="self-care-hours-current">0hrs</h3>
+                <p class="self-care-hours-previous">Yesterday - 0hrs</p>
               </div>
             </div>
           </div>
