@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/androgitai/TimeTrackingDashboard)
-- Live Site URL: [Add live site URL here](https://time-dashboard.netlify.app/)
+- Solution URL: [GitHub](https://github.com/androgitai/TimeTrackingDashboard)
+- Live Site URL: [Netlify](https://time-dashboard.netlify.app/)
 
 ## My process
 
