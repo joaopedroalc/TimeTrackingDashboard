@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./project.jpg]
+![Design screenshot for the Time tracking dashboard coding challenge](./project.jpg)
 
 ### Links
 
