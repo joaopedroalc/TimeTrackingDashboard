@@ -23,9 +23,9 @@
               <div class="card-person-body">
                 <div class="card-person-body-timeframe">
                   <ul class="card-person-body-timeframelist">
-                    <li><button class="btn btn-daily btn-active">Daily</button></li>
-                    <li><button class="btn btn-weekly">Weekly</button></li>
-                    <li><button class="btn btn-monthly">Monthly</button></li>
+                    <li><button class="btn btn-daily" data-time="daily">Daily</button></li>
+                    <li><button class="btn btn-weekly btn-active" data-time="weekly">Weekly</button></li>
+                    <li><button class="btn btn-monthly" data-time="monthly">Monthly</button></li>
                   </ul>
                 </div>
               </div>
@@ -36,8 +36,16 @@
               <div class="card-header card-header-work">
                 <img class="card-header-img" src="/images/icon-work.svg" alt="Work" />
               </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
               <div class="card-body card-body-work">
-                <h2>Work</h2>
+                <!-- <h2>Work</h2>
                 <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                   <path
                     class="card-svg-color"
@@ -47,7 +55,7 @@
                   />
                 </svg>
                 <h3 class="work-hours-current">0hrs</h3>
-                <p class="work-hours-previous">Yesterday - 0hrs</p>
+                <p class="work-hours-previous">Yesterday - 0hrs</p> -->
               </div>
             </div>
           </div>
@@ -56,19 +64,15 @@
               <div class="card-header card-header-play">
                 <img class="card-header-img" src="/images/icon-play.svg" alt="play" />
               </div>
-              <div class="card-body card-body-play">
-                <h2>Play</h2>
-                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    class="card-svg-color"
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <h3 class="play-hours-current">0hrs</h3>
-                <p class="play-hours-previous">Yesterday - 0hrs</p>
-              </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <div class="card-body card-body-play"></div>
             </div>
           </div>
           <div class="grid-container-item grid-item-study">
@@ -76,19 +80,15 @@
               <div class="card-header card-header-study">
                 <img class="card-header-img" src="/images/icon-study.svg" alt="study" />
               </div>
-              <div class="card-body card-body-study">
-                <h2>Study</h2>
-                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    class="card-svg-color"
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <h3 class="study-hours-current">0hrs</h3>
-                <p class="study-hours-previous">Yesterday - 0hrs</p>
-              </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <div class="card-body card-body-study"></div>
             </div>
           </div>
           <div class="grid-container-item grid-item-exercise">
@@ -96,19 +96,15 @@
               <div class="card-header card-header-exercise">
                 <img class="card-header-img" src="/images/icon-exercise.svg" alt="exercise" />
               </div>
-              <div class="card-body card-body-exercise">
-                <h2>Exercise</h2>
-                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    class="card-svg-color"
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <h3 class="exercise-hours-current">0hrs</h3>
-                <p class="exercise-hours-previous">Yesterday - 0hrs</p>
-              </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <div class="card-body card-body-exercise"></div>
             </div>
           </div>
           <div class="grid-container-item grid-item-social">
@@ -116,45 +112,37 @@
               <div class="card-header card-header-social">
                 <img class="card-header-img" src="/images/icon-social.svg" alt="social" />
               </div>
-              <div class="card-body card-body-social">
-                <h2>Social</h2>
-                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    class="card-svg-color"
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <h3 class="social-hours-current">0hrs</h3>
-                <p class="social-hours-previous">Yesterday - 0hrs</p>
-              </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <div class="card-body card-body-social"></div>
             </div>
           </div>
-          <div class="grid-container-item grid-item-self-care">
-            <div class="card card-self-care">
-              <div class="card-header card-header-self-care">
+          <div class="grid-container-item grid-item-selfcare">
+            <div class="card card-selfcare">
+              <div class="card-header card-header-selfcare">
                 <img class="card-header-img" src="/images/icon-self-care.svg" alt="selfcare" />
               </div>
-              <div class="card-body card-body-self-care">
-                <h2>Self Care</h2>
-                <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    class="card-svg-color"
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <h3 class="self-care-hours-current">0hrs</h3>
-                <p class="self-care-hours-previous">Yesterday - 0hrs</p>
-              </div>
+              <svg class="card-svg" width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="card-svg-color"
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <div class="card-body card-body-selfcare"></div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="attribution">
+    <footer class="footer">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Andras "Andro" Kelemen</a>.
     </footer>
